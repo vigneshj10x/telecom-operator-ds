@@ -1,0 +1,897 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='a23d33c63e243995eaca0ad43586c658ba318f1f76540c64de6702ff4a642d17' _.fcp.WorkbookFingerprinting.true...creator-author-id='a23d33c63e243995eaca0ad43586c658ba318f1f76540c64de6702ff4a642d17' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='88b1720c3cc1b4a22ee688076bc10e18dd1633c1e339e0d7c9c2b9d7c039974a' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='88b1720c3cc1b4a22ee688076bc10e18dd1633c1e339e0d7c9c2b9d7c039974a' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Q29_telecom_network_cleaned' inline='true' name='federated.07tvbau0a22afr15dw5vv0ar04gs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q29_telecom_network_cleaned' name='textscan.1tp5rr81f3m1ju13iehkt1yc561r'>
+            <connection class='textscan' directory='C:/Users/ELCOT/Desktop/Data-Science' filename='Q29_telecom_network_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1tp5rr81f3m1ju13iehkt1yc561r' name='Q29_telecom_network_cleaned.csv' table='[Q29_telecom_network_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='call_id' ordinal='0' />
+            <column datatype='string' name='location' ordinal='1' />
+            <column datatype='real' name='signal_strength_dbm' ordinal='2' />
+            <column datatype='integer' name='call_duration_min' ordinal='3' />
+            <column datatype='integer' name='dropped_call' ordinal='4' />
+            <column datatype='string' name='network_type' ordinal='5' />
+            <column datatype='real' name='data_usage_mb' ordinal='6' />
+            <column datatype='string' name='signal_quality' ordinal='7' />
+            <column datatype='integer' name='call_reliability' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[call_id]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>signal_strength_dbm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[signal_strength_dbm]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>signal_strength_dbm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_duration_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call_duration_min]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_duration_min</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropped_call</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dropped_call]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>dropped_call</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>network_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[network_type]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>network_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_usage_mb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_usage_mb]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>data_usage_mb</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>signal_quality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[signal_quality]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>signal_quality</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_reliability</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call_reliability]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_reliability</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Q29_telecom_network_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F]' role='measure' type='quantitative' />
+      <column caption='Call Duration Min' datatype='integer' name='[call_duration_min]' role='measure' type='quantitative' />
+      <column caption='Call Id' datatype='string' name='[call_id]' role='dimension' type='nominal' />
+      <column caption='Call Reliability' datatype='integer' name='[call_reliability]' role='measure' type='quantitative' />
+      <column caption='Data Usage Mb' datatype='real' name='[data_usage_mb]' role='measure' type='quantitative' />
+      <column caption='Dropped Call' datatype='integer' name='[dropped_call]' role='measure' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Network Type' datatype='string' name='[network_type]' role='dimension' type='nominal' />
+      <column caption='Signal Quality' datatype='string' name='[signal_quality]' role='dimension' type='nominal' />
+      <column caption='Signal Strength Dbm' datatype='real' name='[signal_strength_dbm]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Q29_telecom_network_cleaned.csv' id='Q29_telecom_network_cleaned.csv_59EFAF7134DD4C1ABA49DE4CA0C8798F'>
+            <properties context=''>
+              <relation connection='textscan.1tp5rr81f3m1ju13iehkt1yc561r' name='Q29_telecom_network_cleaned.csv' table='[Q29_telecom_network_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='call_id' ordinal='0' />
+                  <column datatype='string' name='location' ordinal='1' />
+                  <column datatype='real' name='signal_strength_dbm' ordinal='2' />
+                  <column datatype='integer' name='call_duration_min' ordinal='3' />
+                  <column datatype='integer' name='dropped_call' ordinal='4' />
+                  <column datatype='string' name='network_type' ordinal='5' />
+                  <column datatype='real' name='data_usage_mb' ordinal='6' />
+                  <column datatype='string' name='signal_quality' ordinal='7' />
+                  <column datatype='integer' name='call_reliability' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Q29_telecom_network_cleaned (2)' inline='true' name='federated.0rv0wow1p3zkmr1068atk01gddgr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Q29_telecom_network_cleaned' name='textscan.1249gvv1aus21r1btn2580payce6'>
+            <connection class='textscan' directory='C:/Users/ELCOT/Desktop/Data-Science' filename='Q29_telecom_network_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1249gvv1aus21r1btn2580payce6' name='Q29_telecom_network_cleaned.csv' table='[Q29_telecom_network_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='call_id' ordinal='0' />
+            <column datatype='string' name='location' ordinal='1' />
+            <column datatype='real' name='signal_strength_dbm' ordinal='2' />
+            <column datatype='integer' name='call_duration_min' ordinal='3' />
+            <column datatype='integer' name='dropped_call' ordinal='4' />
+            <column datatype='string' name='network_type' ordinal='5' />
+            <column datatype='real' name='data_usage_mb' ordinal='6' />
+            <column datatype='string' name='signal_quality' ordinal='7' />
+            <column datatype='integer' name='call_reliability' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[call_id]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>signal_strength_dbm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[signal_strength_dbm]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>signal_strength_dbm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_duration_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call_duration_min]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_duration_min</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropped_call</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dropped_call]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>dropped_call</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>network_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[network_type]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>network_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_usage_mb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_usage_mb]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>data_usage_mb</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>signal_quality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[signal_quality]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>signal_quality</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_reliability</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call_reliability]</local-name>
+            <parent-name>[Q29_telecom_network_cleaned.csv]</parent-name>
+            <remote-alias>call_reliability</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Q29_telecom_network_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157]' role='measure' type='quantitative' />
+      <column caption='Call Duration Min' datatype='integer' name='[call_duration_min]' role='measure' type='quantitative' />
+      <column caption='Call Id' datatype='string' name='[call_id]' role='dimension' type='nominal' />
+      <column caption='Call Reliability' datatype='integer' name='[call_reliability]' role='measure' type='quantitative' />
+      <column caption='Data Usage Mb' datatype='real' name='[data_usage_mb]' role='measure' type='quantitative' />
+      <column caption='Dropped Call' datatype='integer' name='[dropped_call]' role='measure' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Network Type' datatype='string' name='[network_type]' role='dimension' type='nominal' />
+      <column caption='Signal Quality' datatype='string' name='[signal_quality]' role='dimension' type='nominal' />
+      <column caption='Signal Strength Dbm' datatype='real' name='[signal_strength_dbm]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Q29_telecom_network_cleaned.csv' id='Q29_telecom_network_cleaned.csv_C6AAF21175DE4D77AA539A5F4613B157'>
+            <properties context=''>
+              <relation connection='textscan.1249gvv1aus21r1btn2580payce6' name='Q29_telecom_network_cleaned.csv' table='[Q29_telecom_network_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='call_id' ordinal='0' />
+                  <column datatype='string' name='location' ordinal='1' />
+                  <column datatype='real' name='signal_strength_dbm' ordinal='2' />
+                  <column datatype='integer' name='call_duration_min' ordinal='3' />
+                  <column datatype='integer' name='dropped_call' ordinal='4' />
+                  <column datatype='string' name='network_type' ordinal='5' />
+                  <column datatype='real' name='data_usage_mb' ordinal='6' />
+                  <column datatype='string' name='signal_quality' ordinal='7' />
+                  <column datatype='integer' name='call_reliability' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Dropped calls by Location'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q29_telecom_network_cleaned (2)' name='federated.0rv0wow1p3zkmr1068atk01gddgr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rv0wow1p3zkmr1068atk01gddgr'>
+            <column-instance column='[dropped_call]' derivation='Avg' name='[avg:dropped_call:qk]' pivot='key' type='quantitative' />
+            <column caption='Dropped Call' datatype='integer' name='[dropped_call]' role='measure' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rv0wow1p3zkmr1068atk01gddgr].[avg:dropped_call:qk]</rows>
+        <cols>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{A56296BC-D7EB-40DF-B396-4D35BC924EE4}' />
+    </worksheet>
+    <worksheet name='Signal Strength by Network Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Q29_telecom_network_cleaned (2)' name='federated.0rv0wow1p3zkmr1068atk01gddgr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rv0wow1p3zkmr1068atk01gddgr'>
+            <column-instance column='[signal_strength_dbm]' derivation='Avg' name='[avg:signal_strength_dbm:qk]' pivot='key' type='quantitative' />
+            <column caption='Call Id' datatype='string' name='[call_id]' role='dimension' type='nominal' />
+            <column caption='Network Type' datatype='string' name='[network_type]' role='dimension' type='nominal' />
+            <column-instance column='[call_id]' derivation='None' name='[none:call_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[network_type]' derivation='None' name='[none:network_type:nk]' pivot='key' type='nominal' />
+            <column caption='Signal Strength Dbm' datatype='real' name='[signal_strength_dbm]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:network_type:nk]' />
+              <lod column='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:call_id:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0rv0wow1p3zkmr1068atk01gddgr].[avg:signal_strength_dbm:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0rv0wow1p3zkmr1068atk01gddgr].[avg:signal_strength_dbm:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rv0wow1p3zkmr1068atk01gddgr].[avg:signal_strength_dbm:qk]</rows>
+        <cols>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:network_type:nk]</cols>
+      </table>
+      <simple-id uuid='{0BD5C3EC-C6C4-4CAC-9678-3F3DAC7A3D6D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='36000' id='3' name='Dropped calls by Location' w='82400' x='800' y='63000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='62000' id='9' name='Signal Strength by Network Type' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='18250' id='8' name='Dropped calls by Location' pane-specification-id='1' param='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='62000' id='9' is-fixed='true' name='Signal Strength by Network Type' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='3' is-fixed='true' name='Dropped calls by Location' w='82400' x='800' y='63000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18250' id='8' name='Dropped calls by Location' pane-specification-id='1' param='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3A2B3E67-C178-4F40-9DA1-E753D19187C4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Dropped calls by Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95715E09-619E-422A-BD90-A639BF3BC9E7}' />
+    </window>
+    <window class='worksheet' name='Signal Strength by Network Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:call_id:nk]</field>
+            <field>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:network_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7EEEDD00-93BB-47F1-B0F6-12661F9EFB62}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Dropped calls by Location'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0rv0wow1p3zkmr1068atk01gddgr].[none:location:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Signal Strength by Network Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{947F9367-6C66-48E0-BA84-ACAB50279CB8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dropped calls by Location' width='192'>
+      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
+      D7yfhAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Signal Strength by Network Type' width='187'>
+      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
+      374EnT/MkVdbMXT+e7z5YIjnr9chmudT6y+OitjyuzR+MucpwgHOD6DkgwPYw4diBpyFVo52
+      H8Roz49E3MJ0id2+8wPe932ajz6dSmjtFSoP/y+PP/M3MkfNI1q/7yfuBd1PUq+FLPjTaaL6
+      l3Nwj5GEVxNwt7gRLVcrTdM0T5/UvvlXjNifiHVe/dk2j+WPvY7hzfdJ7uHpK94YZ0U55RWt
+      MQeab+gNJYfD4XYtL25PHpxjKylzvbR43wPEvX8Ia/Hd3Fm3/yi534cz0UuhAxj8Agj0u/5x
+      omXyYOz7eCtuFmn1tmyNe6/hIR0m8V+eu6AQTaLLMqalkGVMyyKfVBLK0OV1kerz/ybjn1vY
+      /60DTF0JGz6SBwd20/n3YoS4Ng/P7NXYNr9C/OhfMP+f33AJoGAnb780nlFPLeOY3bNXE6Ip
+      PLtmP7uWZx/+OyHzP+T1kUFXvm1U5rL86WT+0X8Rab+O0PFtW8+SNXvL4tGZ/dyudL6MepFX
+      6ocO4NuLqb95At8tn5HtyQsK0QQejf3ixTJo2xa3H4kwt8VSdhFZyQhv8fyKojCb9HQ3v7Ve
+      /A1l8ga98CKPxm40B9Pl7Kf89a+fut3fqksMbTx5QSGaQN5Uugb5AbVlkTeVhDIkdqEMXT+p
+      VHLBQcPPNPti0f1/GBDCPX1iP/UPnnriT2RfarxDxw9cC3EdusResGsz2felsP2t8QTdLm+X
+      ihbv/wEJX6vn4c/4PgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
